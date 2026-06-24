@@ -7,6 +7,7 @@ async function register(): Promise<void>
   const email = (document.getElementById("reg-email") as HTMLInputElement).value.trim();
   const password = (document.getElementById("reg-password") as HTMLInputElement).value.trim();
   const groupId = (document.getElementById("reg-group") as HTMLInputElement).value.trim();
+  
 
   if (!name || !email || !password || !groupId) 
     {
@@ -56,8 +57,8 @@ async function login(): Promise<void>
 
 
 // Buttons verknüpfen.
-document.getElementById("register-btn")!
+document.getElementById("register-btn")
   .addEventListener("click", register);
 
-document.getElementById("login-btn")!
+document.getElementById("login-btn")
   .addEventListener("click", login);
