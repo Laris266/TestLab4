@@ -1,0 +1,19 @@
+1. TypeScript unnecessary type assertion
+
+2. TypeScript unnecessary type assertion
+
+3. Missing lang attribute in HTML
+
+4. Input field without label
+
+5. Input field without label
+
+6. Input field without label
+
+7. Input field without label
+
+8. Input field without label
+
+9. Input field without label
+
+10. Input field without label
