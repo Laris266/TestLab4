@@ -1,0 +1,50 @@
+body{
+    background-color: #b9b9b9;
+}
+
+#piano {
+    position: relative;
+    display: flex;
+}
+
+.key{
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: small;
+    user-select: none;
+    transition: 0.1s ease;
+}
+
+.white{
+    position: relative;
+    width: 3vw;
+    height: 14vw;
+    background: white;
+    border: 1px solid #333;
+    z-index: 1;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+}
+
+.black{
+    position: relative;
+    width: 2vw;
+    height: 9vw;
+    background: black;
+    color: white;
+    z-index: 2;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+}
+
+.key:hover{
+    filter: brightness(0.9);
+}
+
+.key:active{
+    transform: translateY(2px);
+}

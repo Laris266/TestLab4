@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h1>Virtual Piano</h1>
+        <p>Press the following keys to play the notes:</p>
+        
+        <div class="d-flex justify-content-between my-3">
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Dur">C-Dur</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Dorisch">C-Dorisch</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Phrygisch">C-Phrygisch</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Lydisch">C-Lydisch</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Mixolydisch">C-Mixolydisch</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Aeolisch">C-Aeolisch</button>
+            <button class="btn btn-success flex-fill mx-1 mode-btn" data-mode="C_Lokrisch">C-Lokrisch</button>
+        </div>
+        <button id="stopButton" class="btn btn-danger mb-3">Stop/Reset</button>
+        <ul class="list-inline">
+            <li class="list-inline-item"><strong>A</strong> - C</li>
+            <li class="list-inline-item"><strong>W</strong> - C#</li>
+            <li class="list-inline-item"><strong>S</strong> - D</li>
+            <li class="list-inline-item"><strong>E</strong> - D#</li>
+            <li class="list-inline-item"><strong>D</strong> - E</li>
+            <li class="list-inline-item"><strong>F</strong> - F</li>
+            <li class="list-inline-item"><strong>T</strong> - F#</li>
+            <li class="list-inline-item"><strong>G</strong> - G</li>
+            <li class="list-inline-item"><strong>Z</strong> - G#</li>
+            <li class="list-inline-item"><strong>H</strong> - A</li>
+            <li class="list-inline-item"><strong>U</strong> - A#</li>
+            <li class="list-inline-item"><strong>J</strong> - B</li>
+            <li class="list-inline-item"><strong>K</strong> - C2</li>
+        </ul>
+        <div id="piano" class="d-flex justify-content-center">
+            <!-- Piano keys with IDs for JavaScript interaction -->
+            <div class="key white" id="keyC">C</div>
+            <div class="key black" id="keyCsharp">C#</div>
+            <div class="key white" id="keyD">D</div>
+            <div class="key black" id="keyDsharp">D#</div>
+            <div class="key white" id="keyE">E</div>
+            <div class="key white" id="keyF">F</div>
+            <div class="key black" id="keyFsharp">F#</div>
+            <div class="key white" id="keyG">G</div>
+            <div class="key black" id="keyGsharp">G#</div>
+            <div class="key white" id="keyA">A</div>
+            <div class="key black" id="keyAsharp">A#</div>
+            <div class="key white" id="keyB">B</div>
+            <div class="key white" id="keyC2">C2</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
